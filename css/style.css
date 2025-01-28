@@ -20,8 +20,6 @@ html{
     box-sizing: border-box;
     scroll-snap-stop: y mandatory;
     scroll-behavior: smooth;
-
-    
 }
 
 span{
@@ -180,7 +178,11 @@ li a.active , li a:hover{
 }
 
 .email {
-    font-size: 15px;
+    flex-shrink: 1;
+      overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 10px;
     color: var(--primClaro); /* Ajusta este color a tus necesidades */
     line-height: 80px; /* Alinea verticalmente con el logo */
     margin-left: 60px; /* Separación del logo */
@@ -192,8 +194,8 @@ li a.active , li a:hover{
     .email{
         font-size: 10px;
         color: var(--primClaro); /* Ajusta este color a tus necesidades */
-        line-height: 80px; /* Alinea verticalmente con el logo */
-        margin-left: 60px; /* Separación del logo */
+        line-height: 60px; /* Alinea verticalmente con el logo */
+        margin-left: 10px; /* Separación del logo */
         float: left;
         white-space: nowrap; /* Evita que el texto se divida en varias líneas */
         text-align: center;
@@ -621,7 +623,9 @@ footer{
     }
 
     .serviciosAire{
-        padding: 10px;
+        padding: 5.5px;
+        margin: 0;
+        margin-top: 20px;
     }
 
 }
@@ -723,6 +727,7 @@ footer{
 
 .accion{
     gap:30px;
+    padding-top: 40px;
 }
 
 .accionC{
